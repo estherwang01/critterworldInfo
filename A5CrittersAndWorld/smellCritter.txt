@@ -1,0 +1,14 @@
+species: smell
+memsize: 7
+defense: 1
+offense: 1
+size: 5
+energy: 2500
+posture: 0
+
+SIZE < 5 and ENERGY > 400 --> grow;
+ENERGY > 1000 and nearby[3] = 0 --> bud;
+ahead[1] < -1 --> eat;
+ahead[1] > 0 --> attack;
+smell mod 1000 = 0 and smell != 1000000 --> forward;
+smell mod 1000 != 0 --> left;

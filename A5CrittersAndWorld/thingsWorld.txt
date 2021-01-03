@@ -1,0 +1,6 @@
+name space world
+size 25 30
+rock 2 2
+rock 3 3
+rock 5 5
+food 3 5 300

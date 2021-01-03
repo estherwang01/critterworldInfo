@@ -1,0 +1,18 @@
+species: written two
+memsize: 9
+defense: 1
+offense: 1
+size: 10
+energy: 5000
+posture: 0
+
+ENERGY >= SIZE * 500 - 100 and nearby[3] = 0 --> bud;
+ahead[1] < -1 --> eat;
+mem[7] = 1 and mem[8] != 0 --> mem[8] := mem[8] - 1 right;
+mem[7] = 1 and mem[8] = 0 --> mem[7] := 0 forward;
+nearby[0] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 0;
+nearby[1] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 1;
+nearby[2] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 2;
+nearby[3] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 3;
+nearby[4] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 4;
+nearby[5] < -1 and mem[7] = 0 --> mem[7] := 1 mem[8] := 5;
